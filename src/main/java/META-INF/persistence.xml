@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="sparrow-org-model">
+		<class>cn.sparrowmini.org.model.Employee</class>
+		<class>cn.sparrowmini.org.model.Group</class>
+		<class>cn.sparrowmini.org.model.Organization</class>
+		<class>cn.sparrowmini.org.model.PositionLevel</class>
+		<class>cn.sparrowmini.org.model.Role</class>
+		<class>cn.sparrowmini.org.model.SparrowEmployeeToken</class>
+		<class>cn.sparrowmini.org.model.common.AbstractSparrowEntity</class>
+		<class>cn.sparrowmini.org.model.common.AbstractSparrowUuidEntity</class>
+		<class>cn.sparrowmini.org.model.relation.EmployeeOrganizationLevel</class>
+		<class>cn.sparrowmini.org.model.relation.EmployeeOrganizationLevel.EmployeeOrganizationLevelPK</class>
+		<class>cn.sparrowmini.org.model.relation.EmployeeOrganizationRole</class>
+		<class>cn.sparrowmini.org.model.relation.EmployeeOrganizationRole.EmployeeOrganizationRolePK</class>
+		<class>cn.sparrowmini.org.model.relation.EmployeeRelation</class>
+		<class>cn.sparrowmini.org.model.relation.EmployeeRelation.EmployeeRelationPK</class>
+		<class>cn.sparrowmini.org.model.relation.EmployeeUser</class>
+		<class>cn.sparrowmini.org.model.relation.EmployeeUser.EmployeeUserPK</class>
+		<class>cn.sparrowmini.org.model.relation.GroupEmployee</class>
+		<class>cn.sparrowmini.org.model.relation.GroupEmployee.GroupEmployeePK</class>
+		<class>cn.sparrowmini.org.model.relation.GroupOrganization</class>
+		<class>cn.sparrowmini.org.model.relation.GroupOrganization.GroupOrganizationPK</class>
+		<class>cn.sparrowmini.org.model.relation.GroupPositionLevel</class>
+		<class>cn.sparrowmini.org.model.relation.GroupPositionLevel.GroupPositionLevelPK</class>
+		<class>cn.sparrowmini.org.model.relation.GroupRelation</class>
+		<class>cn.sparrowmini.org.model.relation.GroupRelation.GroupRelationPK</class>
+		<class>cn.sparrowmini.org.model.relation.GroupRole</class>
+		<class>cn.sparrowmini.org.model.relation.GroupRole.GroupRolePK</class>
+		<class>cn.sparrowmini.org.model.relation.GroupSysrole</class>
+		<class>cn.sparrowmini.org.model.relation.GroupSysrole.GroupSysrolePK</class>
+		<class>cn.sparrowmini.org.model.relation.GroupUser</class>
+		<class>cn.sparrowmini.org.model.relation.GroupUser.GroupUserPK</class>
+		<class>cn.sparrowmini.org.model.relation.OrganizationGroup</class>
+		<class>cn.sparrowmini.org.model.relation.OrganizationGroup.OrganizationGroupPK</class>
+		<class>cn.sparrowmini.org.model.relation.OrganizationPositionLevel</class>
+		<class>cn.sparrowmini.org.model.relation.OrganizationPositionLevel.OrganizationPositionLevelPK</class>
+		<class>cn.sparrowmini.org.model.relation.OrganizationPositionLevelRelation</class>
+		<class>cn.sparrowmini.org.model.relation.OrganizationPositionLevelRelation.OrganizationPositionLevelRelationPK</class>
+		<class>cn.sparrowmini.org.model.relation.OrganizationRelation</class>
+		<class>cn.sparrowmini.org.model.relation.OrganizationRelation.OrganizationRelationPK</class>
+		<class>cn.sparrowmini.org.model.relation.OrganizationRole</class>
+		<class>cn.sparrowmini.org.model.relation.OrganizationRole.OrganizationRolePK</class>
+		<class>cn.sparrowmini.org.model.relation.OrganizationRoleRelation</class>
+		<class>cn.sparrowmini.org.model.relation.OrganizationRoleRelation.OrganizationRoleRelationPK</class>
+		<properties>
+            <property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:spr;DB_CLOSE_DELAY=-1" />
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.hbm2ddl.auto" value="create-drop" />
+            <!-- <property name="org.hibernate.envers.audit_table_suffix" value="_AUDIT_LOG"/> -->
+        </properties>
+	</persistence-unit>
+</persistence>
