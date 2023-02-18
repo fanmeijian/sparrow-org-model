@@ -4,31 +4,23 @@
 	<artifactId>sparrow-org-model</artifactId>
 	<version>0.0.1</version>
 	<packaging>jar</packaging>
-
 	<properties>
 		<hibernate.version>5.6.5.Final</hibernate.version>
 		<junit-platform.version>5.3.1</junit-platform.version>
 		<typescript-generator.version>2.35.1025</typescript-generator.version>
 	</properties>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.18.20</version>
+			<version>1.18.24</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>1.7.28</version>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.2.3</version>
 		</dependency>
-
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-simple</artifactId>
-			<version>1.7.28</version>
-		</dependency>
-
 		<dependency>
 			<groupId>org.hibernate.validator</groupId>
 			<artifactId>hibernate-validator</artifactId>
@@ -102,17 +94,14 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.1</version>
-
 				<configuration>
 					<release>11</release>
-
 				</configuration>
 			</plugin>
 			<plugin>

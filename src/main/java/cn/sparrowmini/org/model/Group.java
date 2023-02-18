@@ -26,7 +26,6 @@ import cn.sparrowmini.org.model.relation.GroupOrganization;
 import cn.sparrowmini.org.model.relation.GroupPositionLevel;
 import cn.sparrowmini.org.model.relation.GroupRelation;
 import cn.sparrowmini.org.model.relation.GroupRole;
-import cn.sparrowmini.org.model.relation.GroupSysrole;
 import cn.sparrowmini.org.model.relation.OrganizationGroup;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -89,9 +88,9 @@ public class Group extends AbstractSparrowEntity {
 	@OneToMany(cascade = CascadeType.REMOVE, fetch = FetchType.LAZY, mappedBy = "group")
 	private Set<GroupPositionLevel> groupLevels;
 
-	@JsonIgnore
-	@OneToMany(cascade = CascadeType.REMOVE, fetch = FetchType.LAZY, mappedBy = "group")
-	private Set<GroupSysrole> groupSysroles;
+//	@JsonIgnore
+//	@OneToMany(cascade = CascadeType.REMOVE, fetch = FetchType.LAZY, mappedBy = "group")
+//	private Set<GroupSysrole> groupSysroles;
 
 	public Group(String name, String code) {
 		this.name = name;
