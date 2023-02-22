@@ -30,10 +30,12 @@ import cn.sparrowmini.org.model.relation.OrganizationGroup;
 import cn.sparrowmini.org.model.relation.OrganizationPositionLevel;
 import cn.sparrowmini.org.model.relation.OrganizationRelation;
 import cn.sparrowmini.org.model.relation.OrganizationRole;
+import cn.sparrowmini.pem.model.common.ModelPermission;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
+@ModelPermission
 @Data
 @EqualsAndHashCode(callSuper = true, onlyExplicitlyIncluded = true)
 @NoArgsConstructor

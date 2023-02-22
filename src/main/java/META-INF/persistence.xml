@@ -27,8 +27,6 @@
 		<class>cn.sparrowmini.org.model.relation.GroupRelation.GroupRelationPK</class>
 		<class>cn.sparrowmini.org.model.relation.GroupRole</class>
 		<class>cn.sparrowmini.org.model.relation.GroupRole.GroupRolePK</class>
-		<class>cn.sparrowmini.org.model.relation.GroupUser</class>
-		<class>cn.sparrowmini.org.model.relation.GroupUser.GroupUserPK</class>
 		<class>cn.sparrowmini.org.model.relation.OrganizationGroup</class>
 		<class>cn.sparrowmini.org.model.relation.OrganizationGroup.OrganizationGroupPK</class>
 		<class>cn.sparrowmini.org.model.relation.OrganizationPositionLevel</class>
