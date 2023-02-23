@@ -19,7 +19,7 @@ import org.hibernate.envers.NotAudited;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import cn.sparrowmini.org.model.common.AbstractSparrowEntity;
+import cn.sparrowmini.common.AbstractSparrowEntity;
 import cn.sparrowmini.org.model.relation.GroupPositionLevel;
 import cn.sparrowmini.org.model.relation.OrganizationPositionLevel;
 import lombok.Data;

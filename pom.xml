@@ -12,6 +12,11 @@
 	<dependencies>
 		<dependency>
 			<groupId>cn.sparrowmini</groupId>
+			<artifactId>sparrow-common</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>cn.sparrowmini</groupId>
 			<artifactId>sparrow-pem-model</artifactId>
 			<version>0.0.1</version>
 		</dependency>

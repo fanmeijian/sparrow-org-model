@@ -7,8 +7,6 @@
 		<class>cn.sparrowmini.org.model.PositionLevel</class>
 		<class>cn.sparrowmini.org.model.Role</class>
 		<class>cn.sparrowmini.org.model.SparrowEmployeeToken</class>
-		<class>cn.sparrowmini.org.model.common.AbstractSparrowEntity</class>
-		<class>cn.sparrowmini.org.model.common.AbstractSparrowUuidEntity</class>
 		<class>cn.sparrowmini.org.model.relation.EmployeeOrganizationLevel</class>
 		<class>cn.sparrowmini.org.model.relation.EmployeeOrganizationLevel.EmployeeOrganizationLevelPK</class>
 		<class>cn.sparrowmini.org.model.relation.EmployeeOrganizationRole</class>

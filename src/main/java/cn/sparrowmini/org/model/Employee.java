@@ -22,7 +22,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonProperty.Access;
 
-import cn.sparrowmini.org.model.common.AbstractSparrowEntity;
+import cn.sparrowmini.common.AbstractSparrowEntity;
 import cn.sparrowmini.org.model.relation.EmployeeOrganizationLevel;
 import cn.sparrowmini.org.model.relation.EmployeeOrganizationRole;
 import cn.sparrowmini.org.model.relation.EmployeeUser;

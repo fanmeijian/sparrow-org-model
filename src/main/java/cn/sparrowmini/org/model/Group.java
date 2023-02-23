@@ -19,7 +19,7 @@ import org.hibernate.envers.Audited;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import cn.sparrowmini.org.model.common.AbstractSparrowEntity;
+import cn.sparrowmini.common.AbstractSparrowEntity;
 import cn.sparrowmini.org.model.constant.GroupTypeEnum;
 import cn.sparrowmini.org.model.relation.GroupEmployee;
 import cn.sparrowmini.org.model.relation.GroupOrganization;

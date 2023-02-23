@@ -19,9 +19,9 @@ import org.hibernate.envers.Audited;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import cn.sparrowmini.common.AbstractSparrowEntity;
 import cn.sparrowmini.org.model.Organization;
 import cn.sparrowmini.org.model.PositionLevel;
-import cn.sparrowmini.org.model.common.AbstractSparrowEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

@@ -23,7 +23,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import cn.sparrowmini.org.model.common.AbstractSparrowEntity;
+import cn.sparrowmini.common.AbstractSparrowEntity;
 import cn.sparrowmini.org.model.constant.OrganizationTypeEnum;
 import cn.sparrowmini.org.model.relation.GroupOrganization;
 import cn.sparrowmini.org.model.relation.OrganizationGroup;

@@ -20,7 +20,7 @@ import javax.validation.ValidationException;
 
 import org.hibernate.envers.Audited;
 
-import cn.sparrowmini.org.model.common.AbstractSparrowEntity;
+import cn.sparrowmini.common.AbstractSparrowEntity;
 import cn.sparrowmini.org.model.relation.OrganizationPositionLevel.OrganizationPositionLevelPK;
 import lombok.AllArgsConstructor;
 import lombok.Data;
