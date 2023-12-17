@@ -16,7 +16,6 @@ import org.junit.jupiter.api.Test;
 import cn.sparrowmini.org.model.constant.OrganizationTypeEnum;
 import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
 //@ExtendWith(JpaUnit.class)
 public class AuditLogTest {
 
@@ -33,7 +32,7 @@ public class AuditLogTest {
 		entityManager.persist(organization);
 		entityManager.getTransaction().commit();
 		String idString =organization.getId();
-		log.info("organization: {}",organization);
+//		log.info("organization: {}",organization);
 		entityManager.getTransaction().begin();
 		organization.setName("test2");
 		entityManager.persist(new Organization("test", "001223", OrganizationTypeEnum.UNIT));
