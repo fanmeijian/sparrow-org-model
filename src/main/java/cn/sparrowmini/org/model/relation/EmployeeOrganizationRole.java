@@ -2,6 +2,7 @@ package cn.sparrowmini.org.model.relation;
 
 import java.io.Serializable;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 import javax.persistence.EmbeddedId;
@@ -44,7 +45,6 @@ public class EmployeeOrganizationRole extends AbstractSparrowEntity {
 	@Audited
 	private EmployeeOrganizationRolePK id;
 
-	
 	private String stat;
 
 	@JsonIgnore
@@ -66,7 +66,7 @@ public class EmployeeOrganizationRole extends AbstractSparrowEntity {
 	public EmployeeOrganizationRole(String employeeId, OrganizationRolePK f) {
 		this.id = new EmployeeOrganizationRolePK(f, employeeId);
 	}
-	
+
 	@Embeddable
 	@Data
 	@NoArgsConstructor

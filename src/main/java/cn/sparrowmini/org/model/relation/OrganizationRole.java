@@ -30,7 +30,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Entity
 @Table(name = "spr_organization_role")
-public class OrganizationRole extends AbstractSparrowEntity{
+public class OrganizationRole extends AbstractSparrowEntity {
 
 	private static final long serialVersionUID = 1L;
 	@EqualsAndHashCode.Include
@@ -39,17 +39,18 @@ public class OrganizationRole extends AbstractSparrowEntity{
 	private OrganizationRolePK id;
 	@Audited
 	private String stat;
-	
+
 //	@Transient
 //	@JsonProperty
 //	private long childCount;
 
 	@JsonIgnore
 	@OneToMany
-	@JoinColumns({ @JoinColumn(name = "organization_id", referencedColumnName = "organization_id"),
-			@JoinColumn(name = "role_id", referencedColumnName = "role_id") })
+	@JoinColumns({
+			@JoinColumn(name = "organization_id", referencedColumnName = "organization_id", insertable = false, updatable = false),
+			@JoinColumn(name = "role_id", referencedColumnName = "role_id", insertable = false, updatable = false) })
 	private Set<EmployeeOrganizationRole> employeeOrganizationRoles;
-	
+
 //	@Transient
 //	@JsonProperty
 //	private Set<OrganizationRelation> reportRoles;
@@ -62,7 +63,7 @@ public class OrganizationRole extends AbstractSparrowEntity{
 	@ManyToOne
 	@JoinColumn(name = "role_id", insertable = false, updatable = false)
 	private Role role;
-	
+
 	@JsonIgnore
 	@ManyToOne
 	@JoinColumn(name = "organization_id", insertable = false, updatable = false)
@@ -72,26 +73,25 @@ public class OrganizationRole extends AbstractSparrowEntity{
 		this.id = f;
 	}
 
-	public OrganizationRole(String organizationId, String roleId){
+	public OrganizationRole(String organizationId, String roleId) {
 		this.id = new OrganizationRolePK(organizationId, roleId);
 	}
-	
+
 	@Embeddable
 	@Data
 	@NoArgsConstructor
 	@AllArgsConstructor
 	@EqualsAndHashCode
 	@Audited
-	public static class OrganizationRolePK implements Serializable{
+	public static class OrganizationRolePK implements Serializable {
 
 		private static final long serialVersionUID = 1L;
-		
+
 		@Column(name = "organization_id")
 		private String organizationId;
-		
+
 		@Column(name = "role_id")
 		private String roleId;
-
 
 	}
 
